@@ -1,0 +1,3 @@
+com.feature.management.FeatureLookupWebFilterAutoConfiguration
+com.feature.management.FeatureManagerHandlerInterceptorAutoConfiguration
+com.feature.management.appconfig.AppConfigFeatureManagerAutoConfiguration

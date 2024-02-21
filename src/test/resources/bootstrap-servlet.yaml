@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: test-service-servlet
+    version: 1.0.0
+  cloud:
+    azure:
+      appconfiguration:
+        enabled: true
+        stores:
+          - connectionString: Endpoint=http://localhost:8070;Id=test:id;Secret=testSecret
+            selects:
+              - key-filter: /application/
+                label-filter: ','
+              - key-filter: /test-service/
+                label-filter: ','
+              - key-filter: /test/
+                label-filter: 'test'
+
+az-feature-management:
+  configuration:
+    enabled: true
+    snapshot-enabled: true
+    type: APP_CONFIGURATION

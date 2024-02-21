@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "etag": "fPiUsuQz9kB3lrwosezuao01HBX",
+      "key": "/application/appconfig.test.service.name",
+      "label": null,
+      "content_type": null,
+      "value": "test-application",
+      "tags": {},
+      "locked": false,
+      "last_modified": "2022-06-13T13:21:42+00:00"
+    },
+    {
+      "etag": "fPiUsuQz9kB3lrwosezuao01HBY",
+      "key": "/test/appconfig.test.property",
+      "label": "test-label",
+      "content_type": null,
+      "value": "test-property",
+      "tags": {},
+      "locked": false,
+      "last_modified": "2022-06-13T13:21:42+00:00"
+    },
+    {
+      "id": "test_feature",
+      "featureId": "test_feature",
+      "description": "",
+      "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8",
+      "key": ".appconfig.featureflag/test_feature",
+      "enabled": true,
+      "value": "{\"id\":\"test_feature\",\"description\":\"\",\"enabled\":true,\"conditions\":{\"client_filters\":[{\"name\":\"Microsoft.Targeting\",\"parameters\":{\"Audience\":{\"Users\":[],\"Groups\":[],\"DefaultRolloutPercentage\":100}}}]}}"
+    },
+    {
+      "id": "test_feature_1",
+      "featureId": "test_feature_1",
+      "description": "",
+      "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8",
+      "key": ".appconfig.featureflag/test_feature_1",
+      "enabled": true,
+      "value": "{\"id\":\"test_feature_1\",\"description\":\"\",\"enabled\":true,\"conditions\":{\"client_filters\":[{\"name\":\"Microsoft.Targeting\",\"parameters\":{\"Audience\":{\"Users\":[],\"Groups\":[],\"DefaultRolloutPercentage\":100}}}]}}"
+    }
+  ]
+}

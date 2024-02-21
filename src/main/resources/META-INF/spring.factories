@@ -1,0 +1,4 @@
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+com.bootstrap.feature.management.FeatureManagerBootstrapConfiguration
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.bootstrap.feature.management.appconfig.FeatureManagerAwarePropertySourceEnvironmentPostProcessor
