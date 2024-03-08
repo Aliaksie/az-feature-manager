@@ -2,8 +2,6 @@ package com.feature.management;
 
 import java.util.Map;
 
-import com.azure.spring.cloud.config.AppConfigurationAutoConfiguration;
-
 import jakarta.annotation.PostConstruct;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -13,7 +11,6 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.github.tomakehurst.wiremock.junit5.WireMockTest;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

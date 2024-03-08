@@ -43,7 +43,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 @DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_CLASS)
 @WireMockTest(httpPort = 8070)
 @DisplayName("Verifies Feature Lookup operation within servlet context environment.")
-@TestPropertySource(properties = {"spring.main.web-application-type=servlet", "server.port=8081", "spring.cloud.bootstrap.enabled=true"})
+@TestPropertySource(properties = {"server.port=8081", "spring.cloud.bootstrap.enabled=true"})
 class FeatureLookupServletContextTests extends AbstractFeatureLookupOperationContext {
 
     static {

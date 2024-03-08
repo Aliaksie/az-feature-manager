@@ -4,10 +4,9 @@ import java.util.function.Supplier;
 
 import org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.boot.autoconfigure.condition.SearchStrategy;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.web.server.WebFilter;
@@ -23,8 +22,7 @@ import com.feature.management.appconfig.FeatureLookupWebFilter;
 @ConditionalOnProperty(prefix = FeatureManagerProperties.PROPERTY_SOURCE_NAMESPACE,
         name = {"enabled", "snapshot-enabled"},
         havingValue = "true")
-@ConditionalOnBean(type = "org.springframework.boot.web.reactive.server.AbstractReactiveWebServerFactory",
-        search = SearchStrategy.ALL)
+@ConditionalOnWebApplication(type = ConditionalOnWebApplication.Type.REACTIVE)
 class FeatureLookupWebFilterAutoConfiguration {
 
     @Bean
