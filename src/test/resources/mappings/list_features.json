@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/kv",
+    "queryParameters" : {
+      "api-version" : {
+        "equalTo" : "1.0"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "json/get_enabled_features_response.json",
+    "headers": {
+      "Content-Type": "application/vnd.microsoft.appconfig.kvset+json; charset=UTF-8",
+      "Server": "wire_mock/server",
+      "Transfer-Encoding": "chunked"
+    }
+  }
+}

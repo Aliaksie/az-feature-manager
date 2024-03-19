@@ -1,0 +1,11 @@
+{
+  "feature_name": {
+    "enabled": true,
+    "users": [
+      "a59feb81-0236-4397-8d10-f8cc90dd9816"
+    ],
+    "groups": [
+      "clover"
+    ]
+  }
+}
